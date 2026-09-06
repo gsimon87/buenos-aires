@@ -1,0 +1,56 @@
+/* Design tokens — see DESIGN.md. Every value used by app.css lives here. */
+:root {
+  /* Colour */
+  --ink: #1B1D24;
+  --ink-2: #272A34;
+  --ink-3: #3A3E4B;
+  --cream: #F6F1E7;
+  --cream-2: #EDE6D8;
+  --cream-3: #E2D9C6;
+  --line: #D6CCB6;
+  --text: #1B1D24;
+  --text-2: #5E594E;
+  --text-on-ink: #F6F1E7;
+  --text-on-ink-2: #B9B3A5;
+  --red: #A8332B;
+  --red-2: #8C271F;
+  --red-tint: #F3E1DD;
+  --brass: #B8894A;
+  --brass-tint: #F1E6D1;
+  --river: #5E8B7E;
+  --river-tint: #DDE9E3;
+
+  /* Type */
+  --serif: "Fraunces", Georgia, "Times New Roman", serif;
+  --sans: "Inter", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --fs-xs: 0.75rem;   --lh-xs: 1rem;
+  --fs-sm: 0.875rem;  --lh-sm: 1.25rem;
+  --fs-md: 1rem;      --lh-md: 1.5rem;
+  --fs-lg: 1.125rem;  --lh-lg: 1.625rem;
+  --fs-h4: 1.375rem;  --lh-h4: 1.75rem;
+  --fs-h3: 1.75rem;   --lh-h3: 2.125rem;
+  --fs-h2: 2.375rem;  --lh-h2: 2.625rem;
+  --fs-h1: clamp(3.25rem, 9vw, 6rem); --lh-h1: 0.95;
+
+  /* Space */
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px;
+
+  /* Shape & lines */
+  --r-sm: 3px; --r-md: 6px; --r-pill: 999px;
+  --hair: 1px solid var(--line);
+  --rule-brass: 1px solid var(--brass);
+
+  /* Layout */
+  --measure: 68ch;
+  --wide: 1120px;
+  --nav-h: 60px;
+  --tabbar-h: 56px;
+
+  /* Photo grade */
+  --photo-grade: saturate(0.85) sepia(0.12) contrast(1.05);
+
+  /* Motion */
+  --t-fast: 150ms ease-out;
+  --t-day: 220ms ease-out;
+}
