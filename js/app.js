@@ -196,7 +196,7 @@
     </a>`).join("");
     return `
       <section class="hero">
-        <img class="hero-img" src="./assets/img/hero-obelisco.jpg" alt="The Obelisco on Avenida 9 de Julio in late-afternoon light" fetchpriority="high">
+        <img class="hero-img" src="./assets/img/hero-congreso.jpg" alt="The dome of the Congreso Nacional above the city at sunset" fetchpriority="high">
         <div class="hero-body">
           <p class="eyebrow eyebrow-light">A four-day itinerary for two</p>
           <h1 class="hero-title">${esc(m.title)}</h1>
