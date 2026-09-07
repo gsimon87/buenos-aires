@@ -25,7 +25,7 @@ window.TRIP = {
           text: "An easy walk through Plaza Serrano, the boutiques and the street art. No fixed itinerary, just wandering.",
           map: "Plaza Serrano Palermo Soho", area: "palermo" },
         { time: "Evening", title: "Light dinner in Palermo", icon: "fork",
-          text: "Casual, not a big steak dinner. That is saved for the last night. Empanadas or a light bistro.",
+          text: "Casual, not a big steak dinner. That is saved for Monday night at Don Julio. Empanadas or a light bistro.",
           eats: ["El Preferido de Palermo", "Niño Gordo", "La Cabrera"] },
       ],
     },
@@ -49,8 +49,8 @@ window.TRIP = {
     },
     {
       id: "mon", num: "30", weekday: "Monday", month: "November", short: "Mon 30",
-      title: "Uruguay for the day",
-      intro: "A ferry across the Río de la Plata to Colonia del Sacramento, a small Portuguese-Spanish old town you can cover comfortably on foot.",
+      title: "Uruguay for the day, then Don Julio",
+      intro: "A ferry across the Río de la Plata to Colonia del Sacramento, a small Portuguese-Spanish old town you can cover comfortably on foot. Back in Palermo in time for the trip's big dinner.",
       link: { route: "#/uruguay", label: "Full Uruguay day-trip guide" },
       stops: [
         { time: "~07:30", title: "Depart by ferry to Colonia del Sacramento", icon: "ferry", decision: "ferry",
@@ -60,13 +60,16 @@ window.TRIP = {
           text: "Barrio Histórico, the lighthouse, Calle de los Suspiros, Plaza Mayor and the ruins of the Convent of San Francisco.",
           map: "Barrio Histórico Colonia del Sacramento Uruguay", mapRaw: true },
         { time: "~17:00", title: "Return ferry to Buenos Aires", icon: "ferry",
-          text: "Back in the city by evening." },
+          text: "Back in the city by evening. Take the earlier of the afternoon sailings so the crossing, immigration and the taxi to Palermo leave a comfortable margin before dinner.",
+          travel: "~25 min taxi from the terminal to Palermo" },
+        { time: "20:30", title: "Parrilla dinner in Palermo", icon: "flame", donjulio: true,
+          text: "The trip's big dinner, the evening you get back from Uruguay." },
       ],
     },
     {
       id: "tue", num: "1", weekday: "Tuesday", month: "December", short: "Tue 1",
-      title: "Recoleta, a landmark, and the big dinner",
-      intro: "The last full day. Grand mausoleums in the morning, one landmark of your choosing, a sunset on the docks, then the dinner the whole trip has been saving up for.",
+      title: "Recoleta, a landmark, and a sunset on the docks",
+      intro: "The last full day. Grand mausoleums in the morning, one landmark of your choosing, then a sunset on the docks and a relaxed last dinner. The flight is early tomorrow.",
       stops: [
         { time: "09:30", title: "Recoleta Cemetery", icon: "landmark",
           text: "Evita's grave and streets of elaborate mausoleums.",
@@ -74,10 +77,11 @@ window.TRIP = {
         { time: "11:30", title: "MALBA or Teatro Colón", icon: "ticket", decision: "museum",
           text: "One slot, two very different Buenos Aires landmarks. Pick your afternoon." },
         { time: "17:00", title: "Puerto Madero", icon: "sun",
-          text: "A sunset walk along the docks and across the Puente de la Mujer. Keep this a walk rather than a second meal stop; dinner is the big event tonight.",
+          text: "A sunset walk along the docks and across the Puente de la Mujer.",
           travel: "~20 min taxi", map: "Puente de la Mujer Puerto Madero", area: "puerto-madero" },
-        { time: "20:30", title: "Parrilla dinner in Palermo", icon: "flame", donjulio: true,
-          text: "The trip's final dinner." },
+        { time: "Evening", title: "Last dinner, kept easy", icon: "fork",
+          text: "Don Julio was last night, and the flight is early tomorrow, so keep tonight relaxed. Either stay on the docks after the walk or head back to Palermo.",
+          eats: ["La Parolaccia", "Cabaña Las Lilas", "Niño Gordo", "La Cabrera"] },
       ],
     },
   ],
@@ -158,7 +162,8 @@ window.TRIP = {
     backup: { name: "La Cabrera", why: "Also top-rated, generally easier to get a table, generous sides included with every steak.",
               map: "https://www.google.com/maps/search/?api=1&query=La+Cabrera+Palermo+Buenos+Aires" },
     weeksAhead: [6, 8],
-    dinnerDate: "2026-12-01",
+    dinnerDate: "2026-11-30",
+    when: "Monday 30 November, 20:30",
   },
 
   uruguay: {
@@ -181,7 +186,7 @@ window.TRIP = {
       { time: "Lunch", text: "In the old town." },
       { time: "Afternoon", text: "Optional bike rental." },
       { time: "17:00–18:00", text: "Return ferry." },
-      { time: "Evening", text: "Back in Buenos Aires." },
+      { time: "Evening", text: "Back in Buenos Aires. Dinner at Don Julio in Palermo at 20:30, about 25 minutes by taxi from the terminal." },
     ],
     places: [
       { name: "Faro de Colonia del Sacramento", q: "Faro de Colonia del Sacramento Uruguay" },
@@ -228,7 +233,7 @@ window.TRIP = {
   ],
   areaNotes: {
     "la-boca": "Treat La Boca as a walk-through stop for a quick snack or ice cream rather than a dining destination. Save your appetite for elsewhere.",
-    "puerto-madero": "Don Julio is already the trip's big final dinner, so treat Puerto Madero as primarily a sunset walk rather than a second major meal.",
+    "puerto-madero": "Tuesday's sunset walk ends here. Don Julio is Monday's dinner, so if you eat on the docks on Tuesday, keep it relaxed: the flight is early Wednesday.",
   },
   areaNames: { "palermo": "Palermo", "san-telmo": "San Telmo", "la-boca": "La Boca", "recoleta": "Recoleta", "puerto-madero": "Puerto Madero" },
 

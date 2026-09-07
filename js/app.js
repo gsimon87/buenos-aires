@@ -122,7 +122,7 @@
   function donJulioCallout(compact) {
     const d = T.donJulio, st = donJulioStatus(), booked = !!S.bookings.donjulio;
     return `<aside class="callout callout-red ${booked ? "is-done" : ""}" aria-label="Don Julio booking">
-      <div class="callout-head">${I("flame")}<p class="eyebrow eyebrow-red">${booked ? "Booked" : "Reserve now"} · Tuesday 20:30</p></div>
+      <div class="callout-head">${I("flame")}<p class="eyebrow eyebrow-red">${booked ? "Booked" : "Reserve now"} · ${esc(d.when)}</p></div>
       <h3 class="callout-title">${esc(d.name)} <span class="callout-sub">${esc(d.address)}</span></h3>
       <p>${esc(d.why)}</p>
       <p class="callout-status tone-${st.tone}">${esc(st.text)}</p>
